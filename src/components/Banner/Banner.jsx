@@ -2,7 +2,7 @@ import React from "react";
 
 const Banner = () => {
   return (
-    <div className="flex items-center gap-3 w-9/12 mx-auto mt-5">
+    <div className="md:flex items-center gap-3 w-9/12 mx-auto mt-5">
       <div>
         <h2 className="text-5xl font-bold">
           One Step Closer To Your{" "}
