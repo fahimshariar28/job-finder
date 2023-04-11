@@ -14,28 +14,43 @@ const Statistics = () => {
   ];
 
   return (
-    <div className="flex items-center justify-center h-auto">
-      <PieChart width={500} height={400}>
-        <Pie
-          data={Assignment}
-          dataKey="mark"
-          cx="50%"
-          cy="50%"
-          outerRadius={60}
-          fill="#8884d8"
-        />
-        <Pie
-          data={Assignment}
-          dataKey="mark"
-          cx="50%"
-          cy="50%"
-          innerRadius={70}
-          outerRadius={90}
-          fill="#82ca9d"
-          label
-        />
-        <Tooltip />
-      </PieChart>
+    <div className="w-9/12 mx-auto">
+      <h2 className="text-3xl font-bold text-center">Statistics</h2>
+      {/* Make a Table With the assignment marks */}
+      <table className="w-full mt-5">
+        <thead>
+          <tr>
+            <th className="border border-black">Assignment</th>
+            <th className="border border-black">Name</th>
+            <th className="border border-black">Mark</th>
+          </tr>
+        </thead>
+        <tbody>
+          {Assignment.map((e) => (
+            <tr key={e.assignment}>
+              <td className="border border-black">{e.assignment}</td>
+              <td className="border border-black">{e.name}</td>
+              <td className="border border-black">{e.mark}</td>
+            </tr>
+          ))}
+        </tbody>
+      </table>
+      {/* Make a Pie Chart With the assignment marks */}
+      <div className="flex justify-center">
+        <PieChart width={300} height={400}>
+          <Pie
+            data={Assignment}
+            dataKey="mark"
+            nameKey="name"
+            cx="50%"
+            cy="50%"
+            outerRadius={80}
+            fill="#8884d8"
+            label
+          />
+          <Tooltip />
+        </PieChart>
+      </div>
     </div>
   );
 };
