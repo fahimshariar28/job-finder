@@ -8,6 +8,8 @@ import {
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 import React, { useEffect, useState } from "react";
 import { useLoaderData, useParams } from "react-router-dom";
+import { ToastContainer, toast } from "react-toastify";
+import "react-toastify/dist/ReactToastify.css";
 
 const JobDetails = () => {
   const job = useLoaderData();
@@ -35,11 +37,11 @@ const JobDetails = () => {
     const appliedJob = JSON.parse(localStorage.getItem("appliedJob")) || [];
     const newJob = [...appliedJob, jobs];
     localStorage.setItem("appliedJob", JSON.stringify(newJob));
-
-    // add only id to local storage
-    // const appliedJob = JSON.parse(localStorage.getItem("appliedJob")) || [];
-    // const newJob = [...appliedJob, id];
-    // localStorage.setItem("appliedJob", JSON.stringify(newJob));
+  };
+  const btnApplyHandler = () => {
+    toast.success(
+      "Applied Successfully. See Your Applied Job List in Applied Job Tab"
+    );
   };
   return (
     <div className=" w-9/12 mx-auto mt-10 grid grid-cols-3 gap-3">
@@ -102,10 +104,14 @@ const JobDetails = () => {
         <div className="flex justify-center">
           <button
             className="w-full text-center font-bold text-white mt-3 bg-sky-500 px-5 py-3 rounded-lg"
-            onClick={() => btnApply(id)}
+            onClick={() => {
+              btnApply(id);
+              btnApplyHandler();
+            }}
           >
             Apply Now
           </button>
+          <ToastContainer />
         </div>
       </div>
     </div>
