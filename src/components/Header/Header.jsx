@@ -20,7 +20,7 @@ const Header = () => {
         </div>
       </div>
       <div
-        className={`bg-slate-500 p-1 md:flex justify-between gap-3 items-center absolute md:static duration-1000 rounded-md ${
+        className={`bg-slate-500 md:bg-white p-1 md:flex justify-between gap-3 items-center absolute md:static duration-1000 rounded-md ${
           open ? "top-18 right-6" : "-top-56 right-6"
         }`}
       >

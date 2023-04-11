@@ -8,7 +8,6 @@ import {
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 import React, { useEffect, useState } from "react";
 import { useLoaderData, useParams } from "react-router-dom";
-import { addToDb } from "../../utilities/fakedb";
 
 const JobDetails = () => {
   const job = useLoaderData();
@@ -27,11 +26,20 @@ const JobDetails = () => {
     experiences,
     salary,
     job_title,
-    contact_information,
     location,
+    phone,
+    email,
   } = jobs;
   const btnApply = (id) => {
-    addToDb(id);
+    //add full object to local storage
+    const appliedJob = JSON.parse(localStorage.getItem("appliedJob")) || [];
+    const newJob = [...appliedJob, jobs];
+    localStorage.setItem("appliedJob", JSON.stringify(newJob));
+
+    // add only id to local storage
+    // const appliedJob = JSON.parse(localStorage.getItem("appliedJob")) || [];
+    // const newJob = [...appliedJob, id];
+    // localStorage.setItem("appliedJob", JSON.stringify(newJob));
   };
   return (
     <div className=" w-9/12 mx-auto mt-10 grid grid-cols-3 gap-3">
@@ -69,20 +77,20 @@ const JobDetails = () => {
           </p>
           <p className="mt-5 font-bold">Contact Information</p>
           <hr className="w-9/12" />
-          {/* <p>
+          <p>
             <span className="text-sky-500">
               <FontAwesomeIcon icon={faPhone}></FontAwesomeIcon>
             </span>
             {" Phone: "}
-            {contact_information.phone}
+            {phone}
           </p>
           <p>
             <span className="text-sky-500">
               <FontAwesomeIcon icon={faMailBulk}></FontAwesomeIcon>
             </span>
             {" Email: "}
-            {contact_information.email}
-          </p> */}
+            {email}
+          </p>
           <p>
             <span className="text-sky-500">
               <FontAwesomeIcon icon={faLocationDot}></FontAwesomeIcon>

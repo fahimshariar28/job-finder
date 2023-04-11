@@ -12,10 +12,8 @@
     "job_responsibility": "Develop and maintain user-friendly web applications...",
     "education_requirements": "Bachelor's Degree in Computer Science or related field",
     "experiences": "3+ years of experience in frontend development",
-    "contact_information": {
-      "email": "jobs@abcinc.com",
-      "phone": "+1-555-123-4567"
-    }
+    "email": "jobs@abcinc.com",
+    "phone": "+1-555-123-4567"
   },
   {
     "id": 2,
@@ -30,10 +28,8 @@
     "job_responsibility": "Design and implement scalable backend systems...",
     "education_requirements": "Master's Degree in Computer Science or related field",
     "experiences": "5+ years of experience in backend development",
-    "contact_information": {
-      "email": "jobs@xyzcorp.com",
-      "phone": "+1-555-987-6543"
-    }
+    "email": "jobs@xyzcorp.com",
+    "phone": "+1-555-987-6543"
   },
   {
     "id": 3,
@@ -48,10 +44,8 @@
     "job_responsibility": "Develop predictive models and perform statistical analysis...",
     "education_requirements": "Ph.D. in Computer Science, Statistics, or related field",
     "experiences": "2+ years of experience in data science",
-    "contact_information": {
-      "email": "jobs@123enterprises.com",
-      "phone": "+1-555-456-7890"
-    }
+    "email": "jobs@123enterprises.com",
+    "phone": "+1-555-456-7890"
   },
   {
     "id": 4,
@@ -66,10 +60,8 @@
     "job_responsibility": "Develop and execute marketing strategies...",
     "education_requirements": "Bachelor's Degree in Marketing or related field",
     "experiences": "5+ years of experience in marketing",
-    "contact_information": {
-      "email": "jobs@abcinc.com",
-      "phone": "+1-555-123-4567"
-    }
+    "email": "jobs@abcinc.com",
+    "phone": "+1-555-123-4567"
   },
   {
     "id": 5,
@@ -84,10 +76,8 @@
     "job_responsibility": "Perform financial analysis and prepare financial reports...",
     "education_requirements": "Bachelor's degree in Accounting or related field",
     "experiences": "5+ years of experience in accounting or related field",
-    "contact_information": {
-      "email": "jobs@company5.com",
-      "phone": "(123) 456-7890"
-    }
+    "email": "jobs@company5.com",
+    "phone": "(123) 456-7890"
   },
   {
     "id": 6,
@@ -102,9 +92,7 @@
     "job_responsibility": "Develop and implement HR policies and procedures...",
     "education_requirements": "Bachelor's degree in Human Resources or related field",
     "experiences": "7+ years of experience in human resources or related field",
-    "contact_information": {
-      "email": "jobs@company6.com",
-      "phone": "(123) 456-7890"
-    }
+    "email": "jobs@company6.com",
+    "phone": "(123) 456-7890"
   }
 ]
