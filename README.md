@@ -20,6 +20,10 @@
 
 Github Repo -> [CareerBuilder-complete](https://github.com/Porgramming-Hero-web-course/b7a9-career-hub-fahimshariar28.git)
 
+## Live Link
+
+Deployed in Netlify:(https://job-finder-by-fahim.netlify.app/)
+
 ## React Router Dom v6.4
 
 - Documentation Link -> [Link](https://reactrouter.com/en/main/start/overview)

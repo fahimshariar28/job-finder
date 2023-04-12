@@ -18,7 +18,7 @@ const Banner = () => {
         </button>
       </div>
       <div>
-        <img src="../../../public/pictures/hero-section-pic.png" alt="" />
+        <img src="https://i.ibb.co/FqrBjbQ/hero-section-pic.png" alt="" />
       </div>
     </div>
   );
