@@ -44,7 +44,7 @@ const JobDetails = () => {
     );
   };
   return (
-    <div className=" w-9/12 mx-auto mt-10 grid grid-cols-3 gap-3">
+    <div className=" w-9/12 mx-auto mt-10 md:grid grid-cols-3 gap-3">
       <div className="col-span-2">
         <p className="mt-5">
           <span className="font-bold">Job Description:</span> {job_description}
